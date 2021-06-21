@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;800&family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-poppins: "Poppins", sans-serif;
+    --secondary-roboto: "Roboto", sans-serif;
+}
+
+
+body {
+    /* background-color: #BEC5D7; */
+    background-color: #F4F4F2;
+    /* background-color: #F8F8FB; */
+    /* background: linear-gradient(90deg, rgba(90, 104, 231, 1) 0%, rgba(35, 54, 218, 1) 100%); */
+}
+
+header {
+    width: 100%;
+}
+
+.searchPadding {
+    padding: 7px;
+}
+
+.form-control:focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-family: var(--secondary-roboto);
+    font-weight: 700;
+}
+
+#logo_2 {
+    font-weight: 200;
+    font-family: var(--main-poppins);
+}
+
+.noteAddArea {
+    border-radius: 23px;
+}
+
+.titleNote,
+.descNote {
+    border-radius: 5px;
+    background-color: #F8F8FB;
+    border: 10px solid #F8F8FB;
+    box-shadow: rgba(67, 71, 85, 0.205) 0px 0px 0.25em, rgba(90, 124, 188, 0.034) 0px 0.25em 1em;
+}
+
+.titleNote:focus,
+.descNote:focus {
+    outline: none !important;
+    background-color: #F8F8FB;
+    box-shadow: none;
+    border: 10px solid #F8F8FB;
+}
+
+/* Button Styles */
+
+.button {
+    display: inline-flex;
+    height: 45px;
+    width: 153px;
+    border: 2px solid black;
+    margin: 20px 20px 20px 20px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-size: .8em; */
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+a {
+    color: black;
+    font-family: var (--poppins);
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Fifth Button */
+
+#button-5 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#button-5 a {
+    width: 9rem;
+    position: relative;
+    transition: all .45s ease-Out;
+}
+
+#translate {
+    transform: rotate(50deg);
+    width: 100%;
+    height: 250%;
+    left: -200px;
+    top: -30px;
+    background: linear-gradient(90deg, rgba(90, 104, 231, 1) 0%, rgba(35, 54, 218, 1) 100%);
+    position: absolute;
+    transition: all .3s ease-Out;
+}
+
+#button-5:hover #translate {
+    left: 0;
+    border-color: black;
+}
+
+#button-5:hover a {
+    color: #fff;
+    text-decoration: none;
+    font-family: var (--poppins);
+}
+
+/****************************************************/
+/*
+ *  STYLE 2
+ */
+
+.card-text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.card-text::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+
+.card-text::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background-color: black;
+}
+
+.card-text::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.card {
+    max-height: 19.5rem;
+    min-height: 19.5rem;
+    border: 0 solid transparent;
+    margin-bottom: 30px;
+}
+
+.card-body {
+    padding: 1.57rem;
+}
+
+.card-text {
+    color: #31291D;
+    font-size: 14px;
+    font-family: var(--main-poppins);
+}
+
+.card-title {
+    font-weight: 700;
+    font-family: var(--secondary-roboto);
+}
+
+.card-text {
+    min-height: 11.5rem;
+    overflow: auto;
+}
+
+.note-grids {
+    padding: .5rem;
+}
+
+.note-grids .single-note-item .card {
+    border-radius: 10px;
+}
+
+.edit-note {
+    width: 30px;
+    height: 30px;
+    background-image: url('./image/edit.svg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.remove-note {
+    width: 30px;
+    height: 30px;
+    background-image: url('./image/remove.svg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.edit-note,
+.remove-note {
+    cursor: pointer;
+}
+
+.card-color-1 {
+    background-color: #F5972C;
+}
+
+.card-color-2 {
+    background-color: #F3542A;
+}
+
+.card-color-3 {
+    background-color: #7049F0;
+}
+
+.card-color-4 {
+    background-color: #C6D947;
+}
+
+.card-color-5 {
+    background-color: #0AA4F6;
+}
+
+.card-color-6 {
+    background-color: #F5972C;
+}
+
+.note-date {
+    color: #31291D;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--main-poppins);
+}
+
+.dateArea {
+    margin-bottom: -14px;
+}
+
+.noNotes {
+    font-family: var(--main-poppins);
+    font-weight: 700;
+}
+
+.searchAlign {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 575px) {
+    .searchAlign {
+        display: flex;
+        justify-content: center;
+    }
+}
