@@ -79,7 +79,7 @@ function showNotes() {
         notesElm.innerHTML = html;
     } else {
         notesElm.innerHTML = `<div class="noNotes h1">
-        There is no notes found.
+        There are no notes found.
     </div>`;
     }
 }
